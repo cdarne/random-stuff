@@ -1,5 +1,10 @@
 # random-stuff
 
+## Download and mirror locally a page
+```bash
+$ wget --convert-links --page-requisites --span-hosts --execute robots=off --user-agent=mozilla http://learnyousomeerlang.com
+```
+
 ## Download and mirror locally a website
 ```bash
 $ wget --mirror --backup-converted --adjust-extension --random-wait --no-parent --limit-rate=200k --page-requisites --execute robots=off --user-agent=mozilla http://learnyousomeerlang.com

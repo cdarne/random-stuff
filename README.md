@@ -19,3 +19,18 @@ $ find /you/path -type f -name "*.php" -exec md5sum {} + | sort
 ```bash
 $ find /you/path -type f -name "*.php" -exec md5sum {} + | awk '{print $1}' | sort | md5sum
 ```
+
+## Get stats of the most expensive process
+```bash
+$ dstat -c --top-cpu -d --top-bio --top-latency
+```
+
+## Remove files older than 24h
+```bash
+$ find /path -type f -mmin +1440 -delete
+```
+
+## Remove empty directories
+```bash
+$ find /path -type d -empty -delete
+```

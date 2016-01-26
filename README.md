@@ -7,7 +7,7 @@ $ wget --convert-links --page-requisites --span-hosts --execute robots=off --use
 
 ## Download and mirror locally a website
 ```bash
-$ wget --mirror --backup-converted --adjust-extension --random-wait --no-parent --limit-rate=200k --page-requisites --execute robots=off --user-agent=mozilla http://learnyousomeerlang.com
+$ wget --mirror --backup-converted --adjust-extension --convert-links --random-wait --no-parent --limit-rate=200k --page-requisites --execute robots=off --user-agent=mozilla http://learnyousomeerlang.com
 ```
 
 ## md5 all files of a dir
